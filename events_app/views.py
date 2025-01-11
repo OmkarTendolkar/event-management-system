@@ -2,4 +2,4 @@ from django.shortcuts import render
 
 # Create your views here.
 def event_list(request):
-    return render(request, 'layout.html')
+    return render(request, 'events_app/homepage.html')

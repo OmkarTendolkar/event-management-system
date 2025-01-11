@@ -1,0 +1,97 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block header %}
+<header>
+  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="{% static 'img/promotion-banner/01.avif' %}" class="d-block w-100" alt="promotion-banner">
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="{% static 'img/promotion-banner/02.avif' %}" class="d-block w-100" alt="promotion-banner">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'img/promotion-banner/03.avif' %}" class="d-block w-100" alt="promotion-banner">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'img/promotion-banner/04.avif' %}" class="d-block w-100" alt="promotion-banner">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</header>
+{% endblock %}
+
+
+{% block content %}
+    <div class='container upcoming-event'>
+      <div class="event-header">
+        <h2 class="text-center my-5">Upcoming Event</h2>
+      </div>
+      <div class="event-card row gy-3 mb-5">
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <a href="">
+            <div class="card">
+              <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Startup Expo 2025</h5>
+                <p class="card-text">15 Jan 2025 | Bandra Kurla Complex, Mumbai</p>
+                <p class="card-text">India's Biggest Startup Networking Event!</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card">
+            <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card">
+            <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card">
+            <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card">
+            <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+{% endblock %}
+  
+    
+    
